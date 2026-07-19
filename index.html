@@ -186,6 +186,27 @@ searchBox.addEventListener("keyup", function () {
 });
 </script>
 
+window.addEventListener("load", function () {
+    const loader = document.getElementById("loader");
+    if (loader) {
+        loader.style.display = "none";
+    }
+});
+
+const searchBox = document.getElementById("searchBox");
+const cards = document.querySelectorAll(".card");
+
+if (searchBox) {
+    searchBox.addEventListener("keyup", function () {
+        const value = this.value.toLowerCase();
+
+        cards.forEach(card => {
+            const text = card.innerText.toLowerCase();
+            card.style.display = text.includes(value) ? "block" : "none";
+        });
+    });
+}
+</script>
 
 </body>
 </html>
