@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Yono Slots Games</title>
+    <title>ALLYONOSLOTS.COM</title>
     <style>
-        body { font-family: sans-serif; background-color: #e4e4e4; margin: 0; padding: 0; }
-        header { background-color: #1a1a1a; padding: 20px; text-align: center; color: #ff00ff; font-weight: bold; font-size: 24px; border-bottom: 5px solid #00cccc; }
-        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 10px; }
-        .card { background: white; padding: 8px; border-radius: 10px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); text-decoration: none; color: #333; }
-        .card img { width: 100%; aspect-ratio: 1/1; border-radius: 10px; object-fit: cover; }
+        body { font-family: sans-serif; background: #1a1a1a; color: white; margin: 0; padding: 0; }
+        header { padding: 20px; text-align: center; color: #ff00ff; font-weight: bold; font-size: 24px; border-bottom: 3px solid #00cccc; }
+        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; padding: 10px; }
+        .card { background: #2d3446; padding: 10px; border-radius: 8px; text-align: center; text-decoration: none; color: white; }
+        .card img { width: 100%; aspect-ratio: 1/1; border-radius: 8px; }
         .card h4 { margin: 8px 0 2px; font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-        .tag { font-size: 9px; color: #888; margin-bottom: 3px; }
-        .stars { color: #ffcc00; font-size: 10px; }
+        .stars { color: #ffcc00; font-size: 10px; margin-top: 2px; }
     </style>
 </head>
 <body>
@@ -21,47 +20,20 @@
 
 <div class="grid">
     <script>
-        // Maine yahan har game ke liye standard icon ka link set kar diya hai 
-        // Jo aapke screenshot se match karta hai
         const games = [
-            {name: "MBMbet", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "Yono Games", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "Spin Winner", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "567 Slots", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "YN777", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "Bingo101", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "Yono Arcade", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "Jaiho 777", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "Yono VIP", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "789 Jackpots", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "Jaiho Spin", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "Jaiho Arcade", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "ABC Rummy", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "IND Slots", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "Slots Spin", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "Slots Winner", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "Neta.VIP", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "Spin Gold", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "IND Rummy", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "SPIN 101", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "Gogorummy", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "Jaiho Slots", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "SPIN777", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "My11Circle", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "101 Z", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "Jaiho Rummy", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "Rummy 91", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "YONO777", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "Yono Slots", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"},
-            {name: "Yono Poker", img: "https://cdn-icons-png.flaticon.com/128/3180/3180373.png"}
+            "MBMbet", "Yono Games", "Spin Winner", "567 Slots", "YN777", "Bingo101", 
+            "Yono Arcade", "Jaiho 777", "Yono VIP", "789 Jackpots", "Jaiho Spin", 
+            "Jaiho Arcade", "ABC Rummy", "IND Slots", "Slots Spin", "Slots Winner", 
+            "Neta.VIP", "Spin Gold", "IND Rummy", "SPIN 101", "Gogorummy", 
+            "Jaiho Slots", "SPIN777", "My11Circle", "101 Z", "Jaiho Rummy", 
+            "Rummy 91", "YONO777", "Yono Slots", "Yono Poker"
         ];
 
         games.forEach(game => {
             document.write(`
                 <a href="https://t.me/official_yonocodes" class="card">
-                    <img src="${game.img}" alt="${game.name}">
-                    <h4>${game.name}</h4>
-                    <div class="tag">LATEST</div>
+                    <img src="https://cdn-icons-png.flaticon.com/128/3180/3180373.png" alt="Game">
+                    <h4>${game}</h4>
                     <div class="stars">★★★★★</div>
                 </a>
             `);
