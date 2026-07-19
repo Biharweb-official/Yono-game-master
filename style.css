@@ -185,3 +185,35 @@ color:#00ff99;
 background:#00ff99;
 color:#000;
 }
+.stats{
+    padding:70px 8%;
+    text-align:center;
+}
+
+.stats h2{
+    font-size:36px;
+    margin-bottom:30px;
+}
+
+.stats .cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.stats .card{
+    background:#181818;
+    padding:30px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.stats .card:hover{
+    transform:translateY(-8px);
+    border:1px solid #00ff99;
+}
+
+.stats h3{
+    color:#00ff99;
+    font-size:35px;
+}
