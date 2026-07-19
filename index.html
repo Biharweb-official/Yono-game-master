@@ -89,13 +89,34 @@ Download the latest Yono Games and join our official Telegram channel to receive
 <h2>Featured Games</h2>
 
 <div class="cards">
-<div class="card">
+>
 <h3>🎰 Yono Rummy</h3>
 <p>⭐ Rating: 4.9/5</p>
 <p>🎁 ₹500 Welcome Bonus</p>
 <a href="https://t.me/official_yonocodes" target="_blank">Download</a>
 </div>
+<script>
+window.addEventListener("load", function () {
+    const loader = document.getElementById("loader");
+    if (loader) {
+        loader.style.display = "none";
+    }
+});
 
+const searchBox = document.getElementById("searchBox");
+const cards = document.querySelectorAll(".card");
+
+if (searchBox) {
+    searchBox.addEventListener("keyup", function () {
+        const value = this.value.toLowerCase();
+
+        cards.forEach(card => {
+            const text = card.innerText.toLowerCase();
+            card.style.display = text.includes(value) ? "block" : "none";
+        });
+    });
+}
+</script>
 <div class="card">
 <h3>🎲 Yono Slots</h3>
 <p>⭐ Rating: 4.8/5</p>
