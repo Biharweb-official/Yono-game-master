@@ -4,23 +4,40 @@
     <meta charset="UTF-8">
     <title>Yono Games Official</title>
     <style>
-        body { font-family: sans-serif; background: #1a1a2e; color: white; text-align: center; margin: 0; }
-        .hero { padding: 50px; background: #16213e; }
-        .nav { padding: 20px; }
-        .nav a { color: #4ecca3; margin: 0 15px; text-decoration: none; font-weight: bold; font-size: 18px; }
-        .btn { display: inline-block; padding: 15px 30px; background: #4ecca3; color: #1a1a2e; text-decoration: none; font-weight: bold; border-radius: 8px; margin-top: 20px; }
+        body { background: #0b0e14; color: white; font-family: sans-serif; padding: 15px; }
+        h1 { text-align: center; color: #4ecca3; }
+        .games-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+        .game-item { width: 75px; text-align: center; }
+        .game-item img { width: 65px; height: 65px; border-radius: 15px; border: 2px solid #2d3446; }
+        .game-item p { font-size: 10px; margin: 5px 0; font-weight: bold; }
+        .download-btn { display: block; background: #28a745; color: white; text-decoration: none; font-size: 9px; padding: 4px; border-radius: 5px; margin-top: 3px; }
     </style>
 </head>
 <body>
-    <div class="hero">
-        <h1>Welcome to Yono Games Official</h1>
-        <p>Biharweb Official Dwara Developed.</p>
-        <a href="all-games.html" class="btn">View All Games</a>
+
+    <h1>Games</h1>
+    <div class="games-grid">
+        <script>
+            const games = [
+                "MBMbet", "Yono Games", "Spin Winner", "567 Slots", "YN777", 
+                "Bingo101", "Yono Arcade", "Jaiho 777", "Yono VIP", "789 Jackpots", 
+                "Jaiho Spin", "Jaiho Arcade", "ABC Rummy", "IND Slots", "Slots Spin", 
+                "Slots Winner", "Neta.VIP", "Spin Gold", "IND Rummy", "SPIN 101", 
+                "Gogorummy", "Jaiho Slots", "SPIN777", "My11Circle", "101 Z", 
+                "Jaiho Rummy", "Rummy 91", "YONO777", "Yono Slots", "Yono Poker"
+            ];
+
+            games.forEach((name) => {
+                document.write(`
+                    <div class="game-item">
+                        <img src="https://cdn-icons-png.flaticon.com/128/3180/3180373.png" alt="Icon">
+                        <p>${name}</p>
+                        <a href="https://t.me/official_yonocodes" class="download-btn">Download</a>
+                    </div>
+                `);
+            });
+        </script>
     </div>
-    <div class="nav">
-        <a href="index.html">Home</a> | 
-        <a href="all-games.html">All Games</a> | 
-        <a href="about.html">Support</a>
-    </div>
+
 </body>
 </html>
