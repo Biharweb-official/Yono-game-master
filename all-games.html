@@ -5,38 +5,44 @@
     <title>All Games - Yono Official</title>
     <style>
         body { background: #0b0e14; color: white; font-family: sans-serif; padding: 10px; }
-        .grid-container { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
+        .grid-container { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; max-width: 600px; margin: auto; }
         .card { background: #1a1f29; padding: 10px; border-radius: 12px; text-align: center; border: 1px solid #2d3446; }
         .card img { width: 60px; height: 60px; border-radius: 12px; margin-bottom: 5px; }
-        .card h4 { margin: 5px 0; font-size: 14px; }
+        .card h4 { margin: 5px 0; font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
         .btn-group { display: flex; gap: 5px; margin-top: 8px; }
-        .btn { flex: 1; padding: 6px; border-radius: 5px; text-decoration: none; font-size: 11px; font-weight: bold; color: white; }
+        .btn { flex: 1; padding: 6px 2px; border-radius: 5px; text-decoration: none; font-size: 10px; font-weight: bold; color: white; text-align: center; }
         .btn-invite { background: #3a86ff; }
         .btn-down { background: #28a745; }
     </style>
 </head>
 <body>
-    <h2 style="text-align:center;">Games</h2>
+    <h2 style="text-align:center;">All Games</h2>
     <div class="grid-container">
-        <!-- Game 1 Template (Aap isi block ko copy-paste karke games badha sakte hain) -->
-        <div class="card">
-            <img src="https://via.placeholder.com/60" alt="Icon">
-            <h4>MBMbet</h4>
-            <div class="btn-group">
-                <a href="APKA_INVITE_LINK" class="btn btn-invite">Invite</a>
-                <a href="https://t.me/official_yonocodes" class="btn btn-down">Download</a>
-            </div>
-        </div>
+        
+        <script>
+            const games = [
+                "MBMbet", "Yono Games", "Spin Winner", "567 Slots", "YN777", 
+                "Bingo101", "Yono Arcade", "Jaiho 777", "Yono VIP", "789 Jackpots", 
+                "Jaiho Spin", "Jaiho Arcade", "ABC Rummy", "IND Slots", "Slots Spin", 
+                "Slots Winner", "Neta.VIP", "Spin Gold", "IND Rummy", "SPIN 101", 
+                "Gogorummy", "Jaiho Slots", "SPIN777", "My11Circle", "101 Z", 
+                "Jaiho Rummy", "Rummy 91", "YONO777", "Yono Slots", "Yono Poker"
+            ];
 
-        <!-- Game 2 -->
-        <div class="card">
-            <img src="https://via.placeholder.com/60" alt="Icon">
-            <h4>Yono Games</h4>
-            <div class="btn-group">
-                <a href="APKA_INVITE_LINK" class="btn btn-invite">Invite</a>
-                <a href="https://t.me/official_yonocodes" class="btn btn-down">Download</a>
-            </div>
-        </div>
+            games.forEach((name) => {
+                document.write(`
+                    <div class="card">
+                        <img src="https://via.placeholder.com/60" alt="Icon">
+                        <h4>${name}</h4>
+                        <div class="btn-group">
+                            <a href="PASTE_LINK_HERE" class="btn btn-invite">Invite</a>
+                            <a href="https://t.me/official_yonocodes" class="btn btn-down">Download</a>
+                        </div>
+                    </div>
+                `);
+            });
+        </script>
+
     </div>
     <br><center><a href="index.html" style="color:#4ecca3; text-decoration:none;">Back to Home</a></center>
 </body>
