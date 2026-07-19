@@ -136,10 +136,31 @@ Download the latest Yono Games and join our official Telegram channel to receive
 <footer>
 
 © 2026 Yono Codes Hub
-
 </footer>
 
+
+<script>
+const searchBox = document.getElementById("searchBox");
+const cards = document.querySelectorAll(".card");
+
+searchBox.addEventListener("keyup", function () {
+  const value = this.value.toLowerCase();
+
+  cards.forEach(card => {
+    const text = card.innerText.toLowerCase();
+
+    if (text.includes(value)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+});
+</script>
 
 
 </body>
 </html>
+
+
+
