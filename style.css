@@ -167,3 +167,21 @@ color:#00ff99;
 background:#00ff99;
 color:#000;
 }
+.hero-buttons{
+margin-top:35px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.secondary{
+background:transparent;
+border:2px solid #00ff99;
+color:#00ff99;
+}
+
+.secondary:hover{
+background:#00ff99;
+color:#000;
+}
