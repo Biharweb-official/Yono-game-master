@@ -2,42 +2,51 @@
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
-    <title>Yono Games Official</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Yono Slots Games</title>
     <style>
-        body { background: #0b0e14; color: white; font-family: sans-serif; padding: 15px; }
-        h1 { text-align: center; color: #4ecca3; }
-        .games-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
-        .game-item { width: 75px; text-align: center; }
-        .game-item img { width: 65px; height: 65px; border-radius: 15px; border: 2px solid #2d3446; }
-        .game-item p { font-size: 10px; margin: 5px 0; font-weight: bold; }
-        .download-btn { display: block; background: #28a745; color: white; text-decoration: none; font-size: 9px; padding: 4px; border-radius: 5px; margin-top: 3px; }
+        body { font-family: sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }
+        header { background-color: #1a1a1a; padding: 20px; text-align: center; color: #ff00ff; font-weight: bold; font-size: 24px; border-bottom: 5px solid #00cccc; }
+        .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; padding: 10px; }
+        .card { background: white; padding: 10px; border-radius: 8px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .card img { width: 100%; border-radius: 10px; }
+        .card h4 { margin: 10px 0 5px; font-size: 13px; color: #333; }
+        .tag { font-size: 10px; color: #888; margin-bottom: 5px; }
+        .stars { color: #ffcc00; font-size: 12px; }
+        a { text-decoration: none; display: block; }
     </style>
 </head>
 <body>
 
-    <h1>Games</h1>
-    <div class="games-grid">
-        <script>
-            const games = [
-                "MBMbet", "Yono Games", "Spin Winner", "567 Slots", "YN777", 
-                "Bingo101", "Yono Arcade", "Jaiho 777", "Yono VIP", "789 Jackpots", 
-                "Jaiho Spin", "Jaiho Arcade", "ABC Rummy", "IND Slots", "Slots Spin", 
-                "Slots Winner", "Neta.VIP", "Spin Gold", "IND Rummy", "SPIN 101", 
-                "Gogorummy", "Jaiho Slots", "SPIN777", "My11Circle", "101 Z", 
-                "Jaiho Rummy", "Rummy 91", "YONO777", "Yono Slots", "Yono Poker"
-            ];
+<header>ALLYONOSLOTS.COM</header>
 
-            games.forEach((name) => {
-                document.write(`
-                    <div class="game-item">
-                        <img src="https://cdn-icons-png.flaticon.com/128/3180/3180373.png" alt="Icon">
-                        <p>${name}</p>
-                        <a href="https://t.me/official_yonocodes" class="download-btn">Download</a>
-                    </div>
-                `);
-            });
-        </script>
-    </div>
+<div class="grid">
+    <!-- Game 1 -->
+    <a href="https://t.me/official_yonocodes" class="card">
+        <img src="https://via.placeholder.com/150" alt="Game">
+        <h4>Boss Rummy</h4>
+        <div class="tag">LATEST</div>
+        <div class="stars">★★★★★</div>
+    </a>
+
+    <!-- Game 2 -->
+    <a href="https://t.me/official_yonocodes" class="card">
+        <img src="https://via.placeholder.com/150" alt="Game">
+        <h4>BINGO 101</h4>
+        <div class="tag">All Yono App</div>
+        <div class="stars">★★★★★</div>
+    </a>
+
+    <!-- Game 3 -->
+    <a href="https://t.me/official_yonocodes" class="card">
+        <img src="https://via.placeholder.com/150" alt="Game">
+        <h4>SPIN 777</h4>
+        <div class="tag">All Yono App</div>
+        <div class="stars">★★★★★</div>
+    </a>
+    
+    <!-- Isi tarah aap niche aur cards add karte jayen -->
+</div>
 
 </body>
 </html>
