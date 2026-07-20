@@ -14,12 +14,9 @@ body{font-family:'Poppins',sans-serif}
 </style>
 </head>
 <body class="bg-[#f5f7fb]">
-<!-- CONFIG - CHANGE HERE -->
 <script>
-const TELEGRAM_LINK = "https://t.me/official_yonocodes"; // <-- APNA TELEGRAM LINK YAHAN DALO
+const TELEGRAM_LINK = "https://t.me/official_yonocodes";
 </script>
-
-<!-- Header -->
 <header class="bg-white shadow-sm sticky top-0 z-40">
 <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
 <div class="flex items-center gap-2">
@@ -29,8 +26,6 @@ const TELEGRAM_LINK = "https://t.me/official_yonocodes"; // <-- APNA TELEGRAM LI
 <a href="#" id="headerTg" class="bg-[#229ED9] text-white px-4 py-2 rounded-full text-sm font-semibold"><i class="fab fa-telegram mr-1"></i> Join Telegram</a>
 </div>
 </header>
-
-<!-- Hero -->
 <section class="bg-gradient-to-br from-green-600 via-blue-600 to-indigo-700 text-white py-10 px-4 text-center">
 <h1 class="text-3xl md:text-5xl font-extrabold max-w-4xl mx-auto leading-tight">Yono All Games List & APK Download Link 2026 - Get ₹550 Free</h1>
 <p class="mt-4 text-white/90 max-w-3xl mx-auto">There are 55+ Yono Games Launched by Yono Company Like Love Rummy Yono App. Here is complete list of <b>Yono All Games</b> and Direct APK Download Link from Official Source.</p>
@@ -39,13 +34,9 @@ const TELEGRAM_LINK = "https://t.me/official_yonocodes"; // <-- APNA TELEGRAM LI
 <input id="search" type="text" placeholder="Search Yono Game..." class="w-full px-5 py-3 rounded-full text-gray-800 outline-none shadow-lg">
 </div>
 </section>
-
-<!-- Games Grid -->
 <div class="max-w-7xl mx-auto px-4 py-8">
 <div id="gamesGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"></div>
 </div>
-
-<!-- Content -->
 <div class="max-w-4xl mx-auto px-4 py-6 space-y-6">
 <div class="bg-white p-6 rounded-2xl shadow">
 <h2 class="font-bold text-xl mb-3">Yono All Games Details</h2>
@@ -61,25 +52,45 @@ const TELEGRAM_LINK = "https://t.me/official_yonocodes"; // <-- APNA TELEGRAM LI
 </div>
 </div>
 
-<footer class="bg-gray-900 text-gray-400 py-8 text-center text-sm mt-8">
+<footer class="bg-gray-900 text-gray-400 py-10 text-center text-sm mt-8">
 <p>© 2026 Yono All Games | All Rights Reserved</p>
 <div class="mt-2 space-x-4"><a href="#">Privacy Policy</a><a href="#">Disclaimer</a><a href="#">Contact</a></div>
+<!-- Web Agency Credit - biharweb official -->
+<div class="mt-6 pt-6 border-t border-gray-800 max-w-2xl mx-auto">
+<p class="text-xs text-gray-500">Designed & Developed by</p>
+<a href="https://biharweb-official.github.io" target="_blank" class="inline-flex items-center gap-2 mt-2 bg-white/10 hover:bg-white/20 border border-white/10 px-5 py-2.5 rounded-full transition">
+<span class="w-7 h-7 bg-gradient-to-br from-green-400 to-blue-500 rounded-full flex items-center justify-center text-white font-black text-xs">b</span>
+<span class="text-white font-bold tracking-wide">biharweb official</span>
+<span class="text-[10px] bg-green-500 text-white px-2 py-0.5 rounded-full">✓ Verified</span>
+</a>
+<p class="text-[11px] text-gray-500 mt-3">
+<a href="https://biharweb-official.github.io" target="_blank" class="text-blue-400 hover:text-blue-300 underline">https://biharweb-official.github.io</a><br>
+Professional Website Development | Yono Games | Rummy Apps | Telegram Automation<br>
+Contact: <span class="text-gray-300">@official_yonocodes on Telegram</span>
+</p>
+</div>
 </footer>
 
-<!-- Floating Telegram -->
 <a id="floatTg" href="#" class="fixed bottom-5 right-5 bg-[#229ED9] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl text-2xl z-40"><i class="fab fa-telegram"></i></a>
 
-<!-- Modal -->
-<div id="modal" class="fixed inset-0 bg-black/70 hidden z-50 flex items-center justify-center p-4">
-<div class="bg-white rounded-2xl p-8 max-w-sm w-full text-center">
-<div class="w-16 h-16 bg-[#229ED9]/10 text-[#229ED9] rounded-full flex items-center justify-center mx-auto text-3xl mb-4"><i class="fab fa-telegram"></i></div>
-<h3 class="font-bold text-xl">Join Our Telegram First!</h3>
-<p class="text-sm text-gray-600 mt-2">Download ke liye Telegram join karna zaroori hai. Wahan par latest APK aur bonus codes milenge.</p>
-<div class="mt-4 bg-gray-100 rounded-full py-2 font-bold">Download starts in <span id="count" class="text-green-600 text-xl">3</span>s</div>
-<div class="mt-4 flex gap-3">
-<button id="joinNow" class="flex-1 bg-[#229ED9] text-white py-3 rounded-xl font-bold">Join Telegram</button>
-<button id="continueBtn" class="flex-1 bg-green-600 text-white py-3 rounded-xl font-bold">Download APK</button>
+<!-- Modal - FORCE TELEGRAM JOIN -->
+<div id="modal" class="fixed inset-0 bg-black/80 hidden z-[100] flex items-center justify-center p-4 backdrop-blur-sm">
+<div class="bg-white rounded-3xl p-7 max-w-sm w-full text-center shadow-2xl border-2 border-[#229ED9]/20">
+<div class="w-20 h-20 bg-gradient-to-br from-[#229ED9] to-blue-600 text-white rounded-full flex items-center justify-center mx-auto text-4xl mb-4 shadow-lg animate-bounce"><i class="fab fa-telegram"></i></div>
+<h3 class="font-black text-2xl text-gray-900">Telegram Join Karo! 🔒</h3>
+<p class="text-sm text-gray-600 mt-2 leading-6"><b>Download Locked Hai!</b> Pehle hamara Official Telegram Channel join karo, fir hi download button unlock hoga.</p>
+<div id="step1" class="mt-5">
+<div class="bg-red-50 border border-red-200 rounded-xl p-3 text-xs text-red-700 font-bold"><i class="fas fa-lock mr-1"></i> APK Download is Locked - Join Telegram to Unlock</div>
+<button id="joinNow" class="mt-3 w-full bg-[#229ED9] text-white py-4 rounded-xl font-black text-base shadow-lg hover:scale-[1.02] transition"><i class="fab fa-telegram mr-2"></i> Join @official_yonocodes</button>
+<p class="text-[11px] text-gray-400 mt-2">Join karne ke baad 5 sec me unlock hoga</p>
 </div>
+<div id="step2" class="mt-5 hidden">
+<div class="bg-green-50 border border-green-200 rounded-xl p-3 text-xs text-green-700 font-bold"><i class="fas fa-check-circle mr-1"></i> Telegram Opened! Verifying...</div>
+<div class="mt-3 bg-gray-100 rounded-full py-2.5 font-bold text-gray-700">Unlock in <span id="count" class="text-[#229ED9] text-xl">5</span> seconds</div>
+<div class="mt-1 w-full bg-gray-200 rounded-full h-2 overflow-hidden"><div id="progress" class="h-2 bg-[#229ED9] transition-all" style="width:0%"></div></div>
+<button id="continueBtn" disabled class="mt-3 w-full bg-gray-300 text-gray-500 py-4 rounded-xl font-black text-base cursor-not-allowed"><i class="fas fa-lock mr-2"></i> Download Locked</button>
+</div>
+<p class="text-[10px] text-gray-400 mt-4">⚠️ Bina Telegram join kiye download nahi hoga</p>
 </div>
 </div>
 
@@ -87,46 +98,81 @@ const TELEGRAM_LINK = "https://t.me/official_yonocodes"; // <-- APNA TELEGRAM LI
 const games = [
 ["Max Rummy Yono","50","https://www.maxrummy2.com"],["Jaiho 91 Yono","50","https://91jaihoapp.com"],["Joy Rummy Yono","50","https://www.joyrummyapp.com"],["INR Rummy Yono","50","https://inrrummyvip1.one"],["Boss Rummy Yono","50","https://www.bossrummyo.com"],["Rummy 888 Yono","50","https://rummy888vip02.com"],["Rummy 77 Yono","50","https://rummy77online.net"],["Rummy Ludo Yono","50","https://rummybet.net"],["777 Game Yono","50","https://www.777game8.com"],["OK Rummy Yono","50","https://www.okrummy6.com"],["Hindi 777 Yono","50","https://www.hindi777agent.app"],["Club INR Yono","50","https://clubinrvip2.one"],["Game Rummy Yono","50","https://gamesrummy.net"],["Yes Spin Yono","50","https://www.yesspin88.com"],["Rumble Rummy Yono","50","https://www.rumblerummy444.net"],["Love Rummy Yono","50","https://www.3loverummy.com"],["Share Slots Yono","50","https://share877.com"],["Maha Games Yono","50","https://mahagames-t.com"],["Hi Rummy Yono","55","https://www.hirummyagent.info"],["Jaiho Win Yono","65","https://www.jaihowin15.com"],["Ind Club Yono","65","https://indclub91.com"],["Top Rummy Yono","65","https://www.toprummy.xyz"],["Ind Rummy Yono","65","https://yonoindludo.com"],["Jaiho Slots Yono","65","https://www.jaihoslotsagent.com"],["Saga Slots Yono","65","https://www.sagaslots4.com"],["ABC Rummy Yono","65","https://www.abcrummy0.com"],["Jaiho Rummy Yono","65","https://jaihorummy.co"],["Jaiho 777 Yono","65","https://www.jaiho777agent4.com"],["Rummy 91 Yono","65","https://rummy91e.com"],["Jaiho Spin Yono","65","https://1jaihospinslot.com"],["Jaiho Arcade Yono","65","https://www.jaihoarcade28.com"],["Neta VIP Yono","65","https://www.neta1.vip"],["Slots Spin Yono","65","https://www.slotsspine.com"],["YN 777 Yono","65","https://www.yn077.com"],["101Z Yono","65","https://101z7.vip"],["Spin 101 Yono","65","https://spin101.app"],["Bet 213 Slots Yono","65","https://www.bet213.cc"],["Gogo Rummy Yono","65","https://www.gogoofficialplay.com"],["Bingo 101 Yono","65","https://bin8go101.net"],["789 Jackpots Yono","65","https://join789jackpots1.cc"],["Spin Gold Yono","65","https://spingoldagents.net"],["Spin 777 Yono","65","https://spin777k.com"],["MBM Bet Yono","65","https://www.mbmbet8.com"],["Ind Slots Yono","65","https://www.indslotsbonus.com"],["Spin Crush Yono","65","https://slotswinneragents.com"],["Slots Winner Yono","65","https://slotswinneragents.com"],["Spin Winner Yono","65","https://spinwinnerzz.com"],["Yono VIP Yono","65","https://yonovipga.me"],["567 Slots Yono","65","https://join567slots0.cc"],["Yono Arcade Yono","65","https://uonoarcadeapp.com"],["Yono 777 Yono","65","https://yono777agentrefer.net"],["Yono Slots Yono","65","https://www.yonoslotsk.com"],["Yono Games Yono","65","https://uonogames3.com"],["Yono Rummy Yono","65","https://yonorummyff.com"]
 ];
-
 const grid = document.getElementById('gamesGrid');
+function getDomain(link){ try{return new URL(link).hostname;}catch(e){return "";} }
 function render(list){
  grid.innerHTML = list.map((g,i)=>{
   const colors = ["from-green-400 to-blue-500","from-orange-400 to-red-500","from-purple-400 to-pink-500","from-cyan-400 to-blue-500","from-yellow-400 to-orange-500"];
   const c = colors[i%5];
-  return `<div class="game-card bg-white rounded-2xl overflow-hidden shadow transition">
-   <div class="h-28 bg-gradient-to-br ${c} flex items-center justify-center text-white font-black text-center p-2 text-lg">${g[0]}</div>
+  const domain = getDomain(g[2]);
+  const logoUrl = `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
+  const letter = g[0].charAt(0);
+  return `<div class="game-card bg-white rounded-2xl overflow-hidden shadow transition border border-gray-100">
+   <div class="h-32 bg-gradient-to-br ${c} flex flex-col items-center justify-center text-white p-3 relative">
+    <div class="w-16 h-16 bg-white rounded-2xl shadow-lg flex items-center justify-center overflow-hidden p-1.5">
+     <img src="${logoUrl}" alt="${g[0]} logo" class="w-12 h-12 object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+     <div class="hidden w-12 h-12 bg-gradient-to-br ${c} rounded-xl items-center justify-center font-black text-xl text-white">${letter}</div>
+    </div>
+    <div class="mt-2 font-black text-center text-[13px] leading-tight drop-shadow">${g[0]}</div>
+   </div>
    <div class="p-3 text-center">
-    <div class="bg-yellow-100 text-yellow-800 text-xs font-bold px-2 py-1 rounded-full inline-block">Get Rs. ${g[1]} Bonus Free</div>
-    <button onclick="startDownload('${g[2]}')" class="mt-3 w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-2.5 rounded-xl font-bold text-sm shadow"><i class="fas fa-download mr-1"></i> Download Now</button>
+    <div class="bg-yellow-100 text-yellow-800 text-[11px] font-bold px-2.5 py-1 rounded-full inline-block">₹${g[1]} Bonus</div>
+    <div class="text-[10px] text-gray-400 mt-1 truncate">${domain}</div>
+    <button onclick="startDownload('${g[2]}')" class="mt-2.5 w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-2.5 rounded-xl font-bold text-[13px] shadow hover:shadow-lg transition"><i class="fas fa-download mr-1"></i> Download Now</button>
    </div>
   </div>`
  }).join('');
 }
 render(games);
-
 document.getElementById('search').addEventListener('input', e=>{
  const q = e.target.value.toLowerCase();
  render(games.filter(g=>g[0].toLowerCase().includes(q)));
 });
-
 let currentLink = "";
 let timer;
+let hasJoined = false;
 function startDownload(link){
  currentLink = link;
- window.open(TELEGRAM_LINK,"_blank");
+ hasJoined = false;
  document.getElementById('modal').classList.remove('hidden');
- let sec=3;
- document.getElementById('count').innerText=sec;
+ document.getElementById('step1').classList.remove('hidden');
+ document.getElementById('step2').classList.add('hidden');
+ document.getElementById('continueBtn').disabled = true;
+ document.getElementById('continueBtn').className = "mt-3 w-full bg-gray-300 text-gray-500 py-4 rounded-xl font-black text-base cursor-not-allowed";
+ document.getElementById('continueBtn').innerHTML = '<i class="fas fa-lock mr-2"></i> Download Locked';
+ clearInterval(timer);
+}
+function startUnlockFlow(){
+ hasJoined = true;
+ window.open(TELEGRAM_LINK,"_blank");
+ document.getElementById('step1').classList.add('hidden');
+ document.getElementById('step2').classList.remove('hidden');
+ let sec = 5;
+ let progress = 0;
+ document.getElementById('count').innerText = sec;
+ document.getElementById('progress').style.width = "0%";
  clearInterval(timer);
  timer = setInterval(()=>{
-  sec--; document.getElementById('count').innerText=sec;
-  if(sec<=0){clearInterval(timer); doRedirect();}
+  sec--;
+  progress += 20;
+  document.getElementById('count').innerText = sec;
+  document.getElementById('progress').style.width = progress + "%";
+  if(sec<=0){
+   clearInterval(timer);
+   document.getElementById('progress').style.width = "100%";
+   const btn = document.getElementById('continueBtn');
+   btn.disabled = false;
+   btn.className = "mt-3 w-full bg-gradient-to-r from-green-500 to-green-600 text-white py-4 rounded-xl font-black text-base shadow-lg animate-pulse";
+   btn.innerHTML = '<i class="fas fa-download mr-2"></i> Download Now - Unlock Ho Gaya!';
+  }
  },1000);
 }
 function doRedirect(){
+ if(!hasJoined){ alert("Pehle Telegram Join karo bhai!"); return; }
+ if(document.getElementById('continueBtn').disabled){ return; }
  window.location.href = currentLink;
 }
-document.getElementById('joinNow').onclick=()=>window.open(TELEGRAM_LINK,"_blank");
+document.getElementById('joinNow').onclick=startUnlockFlow;
 document.getElementById('continueBtn').onclick=doRedirect;
 document.getElementById('headerTg').onclick=(e)=>{e.preventDefault(); window.open(TELEGRAM_LINK,"_blank");}
 document.getElementById('floatTg').onclick=(e)=>{e.preventDefault(); window.open(TELEGRAM_LINK,"_blank");}
